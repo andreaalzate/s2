@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>movi</title>
+<script>
+	x=1;
+	y=1;
+</script>
+</head>
+<style>
+	
+	.te1{
+		position: absolute;
+		top: 15px;
+		left: 20px;
+		width: 200px;
+		height: 200px;
+		border: 1px solid black;
+		background: green;
+	}
+	.te2{
+		position: absolute;
+		top: 230px;
+		left: 20px;
+		width: 200px;
+		height: 200px;
+		border: 1px solid black;
+	}
+	.inf1{
+		position: absolute;
+		top: 15px;
+		left: 300px;
+		width: 800px;
+		background: red;
+		height: 300px;
+		border: 1px solid black;
+	}
+	.inf2{
+		position: absolute;
+		top: 15px;
+		left: 300px;
+		width: 0px;
+		background: blue;
+		height: 300px;
+		border: 1px solid black;
+		transition: all 1s;
+	}
+	.inf3{
+		position: absolute;
+		top: 15px;
+		left: 300px;
+		width: 0px;
+		height: 300px;
+		border: 1px solid black;
+		background: yellow;
+		transition: all 1s;
+		
+	}
+	.texto{
+		display: none;
+		color: white;
+		transition: all 1s 0.5;
+	}
+	.text3{
+		display: none;
+		transition: all 1s 0.5;
+	}
+	.cerrar{
+		position: absolute;
+		top: 260px;
+		left: 1000px;
+		width: 0px;
+		height: 0px;
+		border: 1px solid black;
+		background: black;
+		transition: all 1s;
+	}
+</style>
+<body onkeypress="teclado()">
+
+	<div id="tema1" class="te1" onclick="informa1()"></div>
+	<div id="tema2" class="te2" onclick="informa2()"></div>
+	<div id="info1" class="inf1">Bienvenido</div>
+	<div id="info2" class="inf2">
+	<div class="texto" id="tex1">ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </div>
+	</div>
+	<div class="inf3" id="c">
+		<div class="text3" id="t3">CHAO</div>
+	</div>
+	<div class="cerrar" id="cer" onclick="cerr()"> </div>
+	<script>
+	function informa1(){
+		info2.style.width=800+"px";
+		tex1.style.display="block";
+		cer.style.width=100+"px";
+		cer.style.height=50+"px";
+		
+	}
+	function informa2(){
+		c.style.width=800+"px";
+		t3.style.display="block";
+		cer.style.width=100+"px";
+		cer.style.height=50+"px";
+	}
+	function cerr(){
+		info2.style.width=0+"px";
+		info2.style.height=0+"px";
+		info1.style.width=0+"px";
+		info1.style.height=0+"px";
+		tex1.style.display="none";
+		c.style.width=0+"px";
+		c.style.height=0+"px";
+		t3.style.display="none";
+	}
+	</script>
+
+</body>
+</html>
